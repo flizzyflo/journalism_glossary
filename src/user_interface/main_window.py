@@ -3,7 +3,7 @@ from glossar.glossar import Glossary
 from settings.settings import BUTTON_FRAME_SETTINGS, MAIN_BUTTON_FRAME_SETTINGS
 from user_interface.text_frame import TextFrame
 from user_interface.button_frame import ButtonFrame
-from user_interface.main_button_frame import MainButtonFrame
+from user_interface.outer_button_frame import OuterButtonFrame
 
 
 class MainWindow(tk.Tk):
@@ -68,7 +68,7 @@ class MainWindow(tk.Tk):
         
         """Creates the buttons which allow one to get the glossary definition of a specific complicated word."""
 
-        self.main_button_frame = MainButtonFrame(master= self, **MAIN_BUTTON_FRAME_SETTINGS) 
+        self.main_button_frame = OuterButtonFrame(master= self, **MAIN_BUTTON_FRAME_SETTINGS) 
         self.main_button_frame.grid(column= 2, 
                                     row= 0,
                                     rowspan= 3, 

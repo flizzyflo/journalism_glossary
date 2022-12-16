@@ -1,6 +1,6 @@
 import tkinter as tk
 
-class MainButtonFrame(tk.Frame):
+class OuterButtonFrame(tk.Frame):
 
     def __init__(self, **kwargs) -> None:
         super().__init__(**kwargs)
