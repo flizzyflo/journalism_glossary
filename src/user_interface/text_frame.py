@@ -1,9 +1,14 @@
 import tkinter as tk
 import re
 from glossar.glossar import Glossary
-from settings.settings import HIGHLIGHTED_WORD_COLORS, SPECIAL_SIGNS, REGEX_PATTERN_CONNECTED_WORDS, REGEX_PATTERN_SPORTRESULT_DATE, REGEX_PATTERN_FILTER_WORD
 from text_manager.text_manager import TextManager
+from settings.settings import HIGHLIGHTED_WORD_COLORS, SPECIAL_SIGNS, REGEX_PATTERN_CONNECTED_WORDS, REGEX_PATTERN_SPORTRESULT_DATE, REGEX_PATTERN_FILTER_WORD
+
+
 class TextFrame(tk.Frame):
+
+    """Manages the text frame and the colorization of text within the text widget. Interacts
+    with TextManager or Glossary class as well"""
 
     def __init__(self, **kwargs) -> None:
         super().__init__(**kwargs)
